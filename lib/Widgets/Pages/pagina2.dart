@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_megabovino/Widgets/Functions/Barra_lateral/barraLateral.dart';
-import 'package:mobile_megabovino/Widgets/Functions/Execucao/execucaoLista.dart';
+import 'package:mobile_megabovino/Widgets/Functions/Execucao/pagina2_Lista.dart';
 
-class Execucao extends StatelessWidget {
-  const Execucao({Key? key}) : super(key: key);
+class Pagina2 extends StatelessWidget {
+  const Pagina2({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primaryColor: Colors.blue),
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Execução de Manejos'),
+            title: Text('Página 2'),
           ),
-          body: ExecucaoLista(),
+          body: Pagina2Lista(),
           drawer: _barraLateral(context)),
     );
   }

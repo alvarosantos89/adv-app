@@ -1,7 +1,7 @@
 // ignore_for_file: file_names, sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:mobile_megabovino/Widgets/Pages/execucao.dart';
+import 'package:mobile_megabovino/Widgets/Pages/pagina2.dart';
 import 'package:mobile_megabovino/Widgets/Pages/home.dart';
 import 'package:mobile_megabovino/Widgets/Pages/pagina3.dart';
 
@@ -12,7 +12,7 @@ class BarraLateral {
       child: ListView(
         children: <Widget>[
           DrawerHeader(
-            child: Text('MegaBovino'),
+            child: Text('Aplicação'),
             decoration: BoxDecoration(
               color: Colors.cyan,
             ),
@@ -27,8 +27,8 @@ class BarraLateral {
               }),
           ListTile(
               leading: Icon(Icons.star),
-              title: Text('Execução'),
-              subtitle: Text('Execução de Manejos'),
+              title: Text('Página 2 Title'),
+              subtitle: Text('Página 2 Subtitle'),
               trailing: Icon(Icons.arrow_forward),
               onTap: () {
                 _navigatorCadastro(context);
@@ -59,7 +59,7 @@ class BarraLateral {
     //Acesso à página Cadastro
     Navigator.of(context).pop();
     Navigator.of(context)
-        .push(MaterialPageRoute(builder: (BuildContext context) => Execucao()));
+        .push(MaterialPageRoute(builder: (BuildContext context) => Pagina2()));
   }
 
   void _navigatorMovimentacoes(BuildContext context) {

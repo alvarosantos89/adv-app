@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_megabovino/Services/database_execucao.dart';
-import 'package:mobile_megabovino/Widgets/Functions/Execucao/execucaoLista.dart';
-import 'package:mobile_megabovino/Widgets/Functions/Execucao/execucao_card.dart';
+import 'package:mobile_megabovino/Widgets/Functions/Execucao/pagina2_Lista.dart';
+import 'package:mobile_megabovino/Widgets/Functions/Execucao/pagina2_card.dart';
 import 'package:mobile_megabovino/Widgets/Functions/Execucao/item.dart';
 
-class ExecucaoListaState extends State<ExecucaoLista> {
+class Pagina2ListaState extends State<Pagina2Lista> {
   late Future<List<Item>> _itens;
 
   @override
   void initState() {
     super.initState();
-    DatabaseExecucao databaseHelper = DatabaseExecucao();
+    Pagina2Execucao databaseHelper = Pagina2Execucao();
     _itens = databaseHelper.obterItensDaApi();
   }
 

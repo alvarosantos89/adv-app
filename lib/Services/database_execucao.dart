@@ -1,6 +1,6 @@
 import 'package:mobile_megabovino/Widgets/Functions/Execucao/item.dart';
 
-class DatabaseExecucao {
+class Pagina2Execucao {
   Future<List<Item>> obterItensDaApi() async {
     // ignore: prefer_const_declarations
     /*final response = await http.get(Uri.parse('www.api.com'));
